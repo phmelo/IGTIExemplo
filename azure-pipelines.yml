@@ -32,16 +32,16 @@ steps:
     restoreSolution: '$(solution)'
 
 
-- task: SonarCloudPrepare@1
-  displayName: 'Prepare analysis on SonarCloud'
-  inputs:
-    SonarCloud: SONAR
-    organization: promove
-    scannerMode: CLI
-    configMode: manual
-    cliProjectKey: TODOphmeloCliKey
-    cliProjectName: TODOphmeloName
-    cliSources: '$(System.DefaultWorkingDirectory)'
+#- task: SonarCloudPrepare@1
+#  displayName: 'Prepare analysis on SonarCloud'
+#  inputs:
+#    SonarCloud: SONAR
+#    organization: promove
+#    scannerMode: CLI
+#    configMode: manual
+#    cliProjectKey: TODOphmeloCliKey
+#    cliProjectName: TODOphmeloName
+#    cliSources: '$(System.DefaultWorkingDirectory)'
 
 - task: VSBuild@1
   inputs:
